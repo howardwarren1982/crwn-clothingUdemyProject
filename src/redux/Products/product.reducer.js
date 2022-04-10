@@ -35,7 +35,6 @@ const initialState = {
   ],
 };
 
-//put data in redux store
 const productReducer = (state = initialState, action) => {
   switch (action.type) {
     case ProductActionTypes.SET_PRODUCTS:
@@ -69,7 +68,6 @@ const productReducer = (state = initialState, action) => {
 
 export default productReducer;
 
-//product types
 export const ProductActionTypes = {
   SET_PRODUCTS: "SET_PRODUCTS",
   ADD_PRODUCT: "ADD_PRODUCT",
@@ -77,7 +75,6 @@ export const ProductActionTypes = {
   DELETE_PRODUCT: "DELETE_PRODUCT",
 };
 
-//product actions
 export const setProducts = (products) => ({
   type: ProductActionTypes.SET_PRODUCTS,
   payload: products,
